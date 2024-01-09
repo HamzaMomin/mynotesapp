@@ -1,19 +1,16 @@
 import './App.css'
+import Login from './Screen/Login';
 
 function App() {
  
 
   return (
-    <>
-      <div>
-        
-      
-      <h1>Notes App login page</h1>
-      
-        
-      </div>
+    
+    <div >
+    <Login/>
+    </div>
      
-    </>
+    
   )
 }
 
