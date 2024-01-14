@@ -3,6 +3,12 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #FF90BC;
-}
 
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, #272829, #040D12); /* Adjust the colors */
+  font-family: sans-serif; /* Add your preferred font-family */
+  /* Add other global styles if needed */
+}

@@ -15,8 +15,10 @@ const login = () => {
             <input type="Password" required=""/>
             <label>Password</label>
         </div>
+            <p className="FP">Forgot Password ?</p>
             <button type="button" className="btn">Login</button>
-            <div className="signup" >Don't have an account?</div>
+            <p className="line">Don't have an account?</p>
+            <button type="button" className="signup">Sign UP</button>
             </form>	
           </div>
         

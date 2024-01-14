@@ -560,7 +560,7 @@ video {
 	left:50%;
 	top:50%;
 	transform: translate(-50%,-50%);
-    background-color: rgba(0, 0, 0, 0.89);
+    background-color: rgba(0, 0, 0, 0.59);
 	border-radius:15px;
 	padding:70px 100px;
 }
@@ -599,7 +599,7 @@ video {
     color: #fff;
 	padding:10px 20px;
 	text-transform:uppercase;
-	margin-top:50px;
+	margin-top:30px;
 	border-radius:8px;
 	cursor:pointer;
 	position:relative;
@@ -615,7 +615,36 @@ video {
 .btn:hover {
   background-color: #AAD9BB; /* Change color on hover */
 }
+
+.FP{
+  font-size:12px;
+  color: grey;
+  text-align: Right;
+}
+.line {
+  font-size:12px;
+  color: grey;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
 .signup{
-  color: #fff;
-  padding-top: 25px;
+
+	background-color:#867070;
+	outline: none;
+    border: 1px solid;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:30px;
+	border-radius: 15px; 
+	cursor:pointer;
+	position:relative;
+  font-weight: bold;
+  width: 150px;
+}
+
+.signup:hover {
+  background-color: #D5B4B4; /* Change color on hover */
 }
