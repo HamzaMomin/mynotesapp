@@ -17,9 +17,10 @@ const login = () => {
                 </div>
                 <p className="FP"><a href="ForgotPass.jsx" target="_blank" >Forgot Password ?</a> </p>
                 <button type="button" className="btn">Login</button>
-                <p className="line">Don't have an account?</p>
+                <p className="line"><a href="SignUp.jsx" target="_blank">Don't have an account?</a></p>
                 
             </form>
+       
         </div>
 
 
