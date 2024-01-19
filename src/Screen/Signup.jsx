@@ -5,6 +5,7 @@ const SignUp = () => {
     return (
 
         <div className="SP-Box">
+            <div className="SP-Box2">
             <form>
                 <span className="heading">Sign UP</span>
                 
@@ -32,7 +33,7 @@ const SignUp = () => {
             </form>
        
         </div>
-
+        </div>
 
     )
 
