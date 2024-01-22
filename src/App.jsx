@@ -3,6 +3,9 @@ import './App.css'
 import Login from './Screen/Login';
 import ForgotPassword from './Screen/ForgotPass';
 import SignUp from './Screen/Signup';
+import HomeScreen from './NoteScreen/HomeScreen';
+
+
 
 function App() {
 
@@ -11,8 +14,8 @@ function App() {
 
     <div className="container">
       
-      <SignUp/>
-    
+      <HomeScreen/>
+
     </div>
 
   )
