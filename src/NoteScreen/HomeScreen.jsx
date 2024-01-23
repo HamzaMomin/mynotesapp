@@ -13,7 +13,9 @@ const HomeScreen = () => {
             <small>1/22/2024</small>
             <p>delete Icon</p>
             </div>
+
         </div>
+        
     );
 };
 

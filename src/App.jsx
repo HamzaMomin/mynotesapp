@@ -4,7 +4,7 @@ import Login from './Screen/Login';
 import ForgotPassword from './Screen/ForgotPass';
 import SignUp from './Screen/Signup';
 import HomeScreen from './NoteScreen/HomeScreen';
-
+import NoteList from './NoteScreen/Note-List';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
 
     <div className="container">
       
-      <HomeScreen/>
+      <NoteList />
 
     </div>
 
