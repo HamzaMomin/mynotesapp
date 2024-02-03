@@ -2,17 +2,14 @@ import React from "react";
 import './HomeScreen.css';
 import HomeScreen from "./HomeScreen";
 
-const NoteList = ()=> {
+const NoteList = ({ notes }) => {
 
-    return(
+    return (
 
         <div className="note-list">
-
-            <HomeScreen/>
-            <HomeScreen/>
-            <HomeScreen/>
-            <HomeScreen/>
+            {notes.map((note) => <HomeScreen text={note.text} />)}
             
+
         </div>
 
     )
