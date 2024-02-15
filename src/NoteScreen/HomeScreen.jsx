@@ -2,18 +2,18 @@ import React from "react";
 import './HomeScreen.css';
 
 
-const HomeScreen = () => {
+const HomeScreen = ({text, date}) => {
     
    
     return (
         <div className="note">
             <h3>My first Note</h3>
-            <span>Hello this is my note</span>
+            <span>{text}</span>
             <div className="note-footer" >
-            <small>1/22/2024</small>
+            <small>{date}</small>
             <p>delete Icon</p>
             </div>
-
+          
         </div>
         
     );

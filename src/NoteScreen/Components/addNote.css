@@ -1,0 +1,28 @@
+.note.new{
+background-color: #67d7cc;
+
+}
+
+textarea {
+    border : none;
+    resize: none;
+    background-color: #67d7cc;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.Save {
+    border: none;
+    background-color: #e1e1e1;
+    border-radius: 25px;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+    
+}
+
+.Save:hover{
+    background-color: #ededed;
+    cursor: poniter;
+}
