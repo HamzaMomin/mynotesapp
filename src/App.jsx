@@ -12,22 +12,10 @@ function App() {
   const [notes, setNotes] = [] = useState([
     {
 
-      text: "Thsis is my first note",
-      date: "12/1/2024"
+      text: "",
+      date: ""
 
-    },
-    {
-
-      text: "Thsis is my second note",
-      date: "13/1/2024"
-
-    },
-    {
-
-      text: "Thsis is my third note",
-      date: "30/1/2024"
-
-    },
+    }
 
 
 
@@ -35,7 +23,13 @@ function App() {
 
 
   const addNote = (text) => {
-    console.log(text);
+    const date = new Date();
+    const newNote = {
+      text : text,
+      date: date.toLocaleDateString()
+    }
+    const newNotes = [...notes , newNote];
+    setNotes(newNotes)
   };
 
 
