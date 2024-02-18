@@ -5,7 +5,7 @@ import AddNote from "./Components/Note";
 
 
 
-const NoteList = ({ notes , handleAddNote}) => {
+const NoteList = ({ notes , handleAddNote , }) => {
 
     return (
 

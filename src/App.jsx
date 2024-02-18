@@ -21,23 +21,22 @@ function App() {
 
   ]);
 
-
   const addNote = (text) => {
     const date = new Date();
     const newNote = {
-      text : text,
+      text: text,
       date: date.toLocaleDateString()
     }
-    const newNotes = [...notes , newNote];
+    const newNotes = [...notes, newNote];
     setNotes(newNotes)
   };
 
-
+  
   return (
 
     <div className="container">
 
-      <NoteList notes={notes} handleAddNote={addNote} />
+      <NoteList notes={notes} handleAddNote={addNote}/>
 
     </div>
 
