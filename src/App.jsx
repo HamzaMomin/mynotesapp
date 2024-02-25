@@ -1,26 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css'
-import Login from './Screen/Login';
-import ForgotPassword from './Screen/ForgotPass';
-import SignUp from './Screen/Signup';
-import HomeScreen from './NoteScreen/HomeScreen';
+
 import NoteList from './NoteScreen/Note-List';
 import Search from './NoteScreen/Components/Search';
-import Header from './NoteScreen/Components/Header';
-
 function App() {
 
   const [notes, setNotes] = [] = useState([
-    {
-
-      text: "",
-      date: ""
-
-    }
+    
 
 
 
   ]);
+
+  useEffect(()=>{
+
+    const savedNotes = JSON.parse(
+      localStorage.getItem('react-notes-app-data')
+    );
+    if(savedNotes){
+      setNotes(savedNotes)
+    }
+
+  }, [])
+
+  useEffect(()=>{
+      localStorage.setItem('react-notes-app-data' , JSON.stringify(notes))
+  }, [notes])
 
   const [searchText, setSearchText] = useState('');
 
@@ -41,7 +46,7 @@ function App() {
    // <div className={`${darkMode && 'dark-mode'}`}>
 
       <div className="container">
-
+        <h1>My Notes</h1>
          {/* <Header handleDarkMode={setDarkMode} />*/}
         <Search handleSearchNote={setSearchText} />
 
